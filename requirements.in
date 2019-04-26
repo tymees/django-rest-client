@@ -1,0 +1,4 @@
+requests
+pip-tools
+django
+backports-datetime-fromisoformat
