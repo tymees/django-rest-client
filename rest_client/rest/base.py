@@ -89,7 +89,7 @@ class ResourceMetaclass(type):
         """This either runs a class' contribute_to_class method, or adds the
         object to the class as a class attribute.
         """
-        from api.rest import BaseField
+        from rest_client.rest.fields import BaseField
 
         # This enables just specifying the field class, without making an
         # instance

@@ -3,7 +3,7 @@ import logging
 
 from django.utils.module_loading import module_has_submodule
 
-logger = logging.getLogger('api.rest.registry')
+logger = logging.getLogger('rest_client.rest.registry')
 
 
 class ResourceSetupMixin:
