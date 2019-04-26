@@ -157,7 +157,6 @@ class ResourceClient(BaseClient):
                 headers=self._make_auth_headers(),
             )
         except ConnectionError:
-            host_unreachable()
             return None
 
         if request.ok:
@@ -215,7 +214,6 @@ class ResourceClient(BaseClient):
                 **request_kwargs
             )
         except ConnectionError:
-            host_unreachable()
             return False
 
         if request.ok:
@@ -245,7 +243,6 @@ class ResourceClient(BaseClient):
                 headers=self._make_auth_headers(),
             )
         except ConnectionError:
-            host_unreachable()
             return False
 
         return request.ok
@@ -308,7 +305,6 @@ class CollectionClient(BaseClient):
                 headers=self._make_auth_headers(),
             )
         except ConnectionError as e:
-            host_unreachable()
             return None
 
         if request.ok:
