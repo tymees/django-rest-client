@@ -14,6 +14,12 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/tymees/django-rest-client",
     packages=setuptools.find_packages(),
+    install_requires=[
+        'requests',
+        'pip-tools',
+        'django',
+        'backports-datetime-fromisoformat',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Framework :: Django :: 2.1",
