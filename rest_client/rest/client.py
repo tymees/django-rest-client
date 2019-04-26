@@ -22,7 +22,7 @@ class BaseClient:
         self.meta = None
 
         self._http_client = requests
-        self._host = settings.API_HOST
+        self._host = '' # TODO: Add (better) config options
 
     @staticmethod
     def _make_auth_headers() -> dict:
